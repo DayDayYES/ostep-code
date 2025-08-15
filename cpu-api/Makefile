@@ -1,8 +1,8 @@
 
-all: p1 p2 p3 p4
+all: p1 p2 p3 p4 p5
 
 clean:
-	rm -f p1 p2 p3 p4
+	rm -f p1 p2 p3 p4 p5
 
 p1: p1.c
 	gcc -o p1 p1.c -Wall
@@ -15,4 +15,7 @@ p3: p3.c
 
 p4: p4.c
 	gcc -o p4 p4.c -Wall
+
+p5: homework.c
+	gcc -o homework homework.c -Wall
 

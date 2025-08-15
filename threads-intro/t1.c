@@ -13,7 +13,7 @@ void *mythread(void *arg) {
     int i; // stack (private per thread) 
     printf("%s: begin [addr of i: %p]\n", letter, &i);
     for (i = 0; i < max; i++) {
-	counter = counter + 1; // shared: only one
+	    counter = counter + 1; // shared: only one
     }
     printf("%s: done\n", letter);
     return NULL;
@@ -22,7 +22,7 @@ void *mythread(void *arg) {
 int main(int argc, char *argv[]) {                    
     if (argc != 2) {
 	fprintf(stderr, "usage: main-first <loopcount>\n");
-	exit(1);
+	    exit(1);
     }
     max = atoi(argv[1]);
 
